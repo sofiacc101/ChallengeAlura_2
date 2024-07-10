@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles/style_1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+            <!-- Enlace al archivo SVG externo -->
+            <img src="./assets/logo.svg" alt="Logo">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <input type="text" id="mi__input" placeholder="Ingrese el texto aqui" min="1" max="10" class="container__input">
+
+                <div class="presentacion_botones">
+                    <div class="container__unicode">
+                        <span class="unicode-char">&#x24D8;</span>
+                        <p class="unicode-char-p">Solo letras minúsculas y sin acentos</p>
+                    </div>
+
+                    <button onclick="encryptText();" class="container__boton" id="boton_encriptar">Encriptar</button>
+                    
+                    <button onclick="decryptText();" class="container__boton" id="boton_desencriptar" >Desencriptar</button>
+                
+                </div>
+               
+        </section>
+        <section class="container__salida">
+            <div class="container__salida_result" id="container__salida_result">
+                <div class="result" id="result"></div>
+                
+                <button onclick="copyText();" class="container__boton" id="buton_copiar"  >Copiar</button>
+            
+            </div>
+            <div class="container__salida_mensaje" id="id_container__salida_mensaje">
+                <img class="presentacion__imagen" src="./assets/Muñeco.png" alt="">
+                <div class="container_sin_ejecucion"> 
+                   <p class="container__text_se_bold">Ningún mensaje fue encontrado</p>
+                   <p class="container__texto_se">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div> 
+            </div>
+  
+        </section>
+        
+    </main>
+
+</body>
+<script src="app.js"></script>
+</html>
